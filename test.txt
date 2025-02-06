@@ -1,0 +1,409 @@
+Aim
+This investigation aims to examine how the angle of inclination of a ramp affects the acceleration of a body moving down the ramp, determining the value of the acceleration due to gravity, g.
+
+Research Question
+How does the angle of inclination affect the time taken to cover the distance of a wooden trolley on an inclined ramp?
+
+Hypothesis
+As the angle of inclination of the ramp increases, the time takes for the trolley to cover its corresponding distance will decrease. This is due to the greater gravitational force acting upon the ramp as the angle of incline increases, which leads to an increase in the acceleration of the trolley. 
+Through varying the angle of inclination, the investigation aims to determine how changes in the incline impact the kinematic motion of the object, in particular the relationship between the slanted acceleration and the gravitational force acting upon an object. In calculating the acceleration of the trolley, the experiment employs the following kinematical equation used to calculate the acceleration of a moving object under uniform acceleration:
+s = ut+12at2 
+(i) Where, 
+         s  = Distance traveled (length of the ramp) [m] 	     = Acceleration of the trolley [ms-2]
+         t  = Time taken by the trolley to travel [ms-1]	   u  = Initial velocity [ms-1]
+(ii) Considering the object starts from rest, meaning no initial velocity, the initial velocity u is zero, which simplifies the equation to:
+s =12at2
+(iii) To find the slanted acceleration a, the simplified equation is further rearranged as follows:
+a=2st2 
+(iv) The following equation can be applied to investigate the relationship between the inclined angle () and the acceleration () of the object, verifying the value of acceleration due to gravity (g), subsequently:
+
+a=gsin
+This validates the hypothesis of the experiment since as the value of the angle of inclination (), the slanted acceleration increases as a result under the condition <90°. At a constant distance, the time taken for the trolley to cover the distance will decrease as the inclination angle increases. 
+(v) Substituting the value of acceleration a from equation (iii), the following equation will be obtained to determine the value of the acceleration due to gravity, g. 
+2st2= gsin
+
+Background
+i) Gravitational Force in an inclined plane
+It is crucial to understand the kinematic principles in an inclined plane, or a ramp. When an object is placed on an inclined plane, it experiences acceleration from an unbalanced force due to the gravitational force (“Inclined Planes.”). This gravitation force (mg) can be resolved into two components: one parallel to the inclined surface 
+(mgsin) and the other perpendicular to the inclined surface (mgcos) (BYJUS, 2020).
+                          Fig 1. Inclined plane diagram
+From Fig 1, it can be deduced that the perpendicular component of gravity equates to the normal force (N), balancing out the horizontal forces to 0N (BYJUS, 2020). Hence, the object will ultimately accelerate down the ramp directed along the incline towards the floor, resulting in the vector sum of all the forces—the net force (Fnet). 
+The phenomenon is quantified through Newton's second law of motion, where the force acting on an object is the product of its mass and acceleration. By applying Newton's second law to the system, the equation can be arranged as the following:
+Fnet =ma
+ma=mgsin
+a=gsin
+a : Slanted Acceleration [ms-2] 				 : Angle of inclination []
+g : Acceleration due to gravity [ms-2]			m: Mass of the trolley [m]
+Therefore, as the angle of inclination increases, the perpendicular vector component of gravitational force increases, leading to greater acceleration of the trolley and reducing its time to travel a given distance along the ramp. 
+
+ii) Trigonometric function
+In the sin graph, when <90°, the value of sin increases as the angle() increases until it reaches the maximum value of 1 and decreases, as shown in Fig 3. In the context of the experiment, as the angle of incline increases, the overall acceleration of the trolley will increase as a result, requiring the object
+    Fig 2. Sin Graph 		     less time to travel the same distance covered. 
+
+Parameters
+Independent Variable: The independent variable in the investigation will be the angle of inclination of the ramp in degrees [°] which will be changed.
+It will be varied by increasing the height of the ramp by 10 cm, thereby increasing its angle by 5.5  0.5° starting from the initial incline of 6°.
+The angle of the ramp will be respectively 6°, 8.5°, 11°, 13.5°, 16.5°, 19.5°, 22°.
+The following change in angle of inclination will affect the time interval taken for the trolley to pass through the photogates. 
+
+Dependent Variable: The dependent variable in the investigation will be the time interval taken [s]
+ to cover the distance
+The trolley’s time interval will be obtained using the difference in time from Photogate A to B, which will be readily available via the Interface.
+The data collected for time intervals will be utilized to calculate the kinematic equation above to determine the slanted acceleration of the sliding trolley for further investigation.
+
+Control Variables:
+The size and mass of the trolly
+The size and mass of the trolly must stay constant for the experiment to maintain consistency and accuracy. The identical type of trolley will be used throughout all trials to avoid any potential random error arising from its variation.
+Length between the photogates
+The length between the photogates must be constant in the experiment to 0.7 meters to fully validate the equation above. Here, the change in the length of the trolley traveled may introduce a systematic error that would affect the accuracy of all measurements. 
+Release Force
+When releasing the trolley from the ramp, no external force should be imposed on the falling object as even minor discrepancies, such as an unintentional push or a slight delay in the release, can affect the trolley’s acceleration, therefore, the overall data points. For a non-zero net force at the moment of release, the photogate will start timing as soon as the trolley moves, ensuring precise data collection.
+
+Apparatus
+Lift stand
+Trolley ( 0.1 g)
+1.7 m ramp ( 0.01 m)
+Protractor ( 0.5°)
+
+
+Photogates A & B ( 0.001 s)
+Data Interface ( 0.001 s)
+Meter Rule ( 0.001 m)
+
+Ramp – The path of the trolley travels down due to gravitational acceleration; secures the photogates in place by attaching them to the physics stand
+Trolley – The object that slides down the ramp, in which its movement will be measured
+Photogates – Two photogates will be utilized to measure the time it takes for the trolley to pass through. Provides highly accurate, with minimal random error, and essential time data for calculating acceleration. 
+Interface – Connected to both photogates, it calculates and displays the time data recorded by the photogates. 
+Physics stand – Used to secure the ramp and adjust its angle of inclination. 
+Leveling feet – Ensures that the experimental setup is on a level surface and keeps the apparatus stable. Protractor – Used to measure the ramp’s angle of inclination.
+Set-up diagram
+
+Fig 2. Set up Diagram
+
+
+Procedure
+Collect all apparatus required and complete the setup mentioned above
+Connect the ramp to the first slot in the lift stand and adjust its inclined angle to 6° with the use of the analog protractor
+Place the two photogates A & B at a distance of 0.7 away from each other, placing the trolley right behind photogate A, setting the initial velocity to converge to zero.
+Two photogates should be connected to the interface in the mode of interval, with its mode. 
+Release the trolley from the top of the ramp with the absence of any external force, recording its time taken to travel from photogate A to B to the nearest 4th decimal place.
+Repeat steps 3–4 two more times to acquire three data points per angle
+To investigate the relationship between inclined angle and time interval, attach the ramp to the next corresponding hole and repeat 4–6
+Record the data in different angles of 6°, 8.5°, 11°, 13.5°, 16.5°, 19.5°, 22° until a total of 21 trials readings is collected
+
+Safety Considerations
+Prior to conducting the investigation, several safety precautions must be taken into consideration to prevent any potential accidents or injuries:
+Participants and observers should be cautious of the rolling trolley from the inclined ramp during the experiment. 
+As digital apparatus is used for the experiment, ensure the measuring equipment is in proper condition and used under accurate instructions. The experimenters should not touch the interface buttons, as they may reset the time interval during the experiment, causing random errors and manipulation of the data values. 
+Ensure the investigating process is supervised by a teacher or instructor who is knowledgeable and experienced in the safety procedures. 
+The ethical and environmental considerations would not be considered for the following experiment since the investigation is experimenting with kinematic motions. 
+
+
+Raw Data Table 1: Relationship between the angle of inclination and time interval
+Reading
+Angle   0.5 [°]
+Time taken to travel from Photogate A to B [s]
+Trial 1 (t1) 
+ Trial 2 (t2)
+ Trial 3 (t3)
+1
+6
+1.4256
+1.4066
+1.3967
+2
+8.5
+1.1053
+1.1055
+1.1052
+3
+11
+0.9525
+0.9626
+0.9624
+4
+13.5
+0.8553
+0.8549
+0.8552
+5
+16.5
+0.7888
+0.7886
+0.7883
+6
+19.5
+0.7341
+0.7242
+0.7238
+7
+22
+0.6704
+0.6698
+0.6707
+
+
+
+
+
+
+
+
+
+Raw Data Graph 1: Relationship between the angle of inclination and time interval
+
+
+Process Data Table 2: Relationship between the angle of inclination and horizontal acceleration
+Reading
+ Angle  
+ 0.5 [°]
+Average 
+time tavg [s]
+Sin
+Distance
+2s [m]
+Time Squaredt2 [s2]
+Distance by Time squared2st2[ms-2]
+1
+6
+1.4096
+0.1045
+1.4
+1.9871
+0.7046
+2
+8.5
+1.1053
+0.1478
+1.4
+1.2218
+1.1459
+3
+11
+0.9592
+0.1908
+1.4
+0.9200
+1.5218
+4
+13.5
+0.8551
+0.2334
+1.4
+0.7313
+1.9145
+5
+16.5
+0.7886
+0.284
+1.4
+0.5692
+2.4596
+6
+19.5
+0.7274
+0.3338
+1.4
+0.4723
+2.9644
+7
+22
+0.6703
+0.3746
+1.4
+0.4135
+3.3856
+
+
+Sample Calculation
+i) Average time interval (t):
+tavg = t1 + t2 + t33 
+      = 1.4256 + 1.4066 + 1.39673
+       =  1.4096 s
+ii) 2s
+S = 0.7 m 
+2s = 1.4 m
+iii) sin(θ)
+sin(8) ≈ 0.9894
+
+
+
+iv) t2
+t2 =(1.4096)2
+     =  2.8192 s
+
+
+v)  2st2
+2st2=20.72.8192 
+      = 0.4966 ms-2
+Standard measurements
+Length of the ramp s [m]
+s=0.7 m
+Initial velocity u
+u=0 ms-1
+
+
+
+
+Process Data Graph 1: Relationship between the angle of inclination and slanted acceleration
+
+
+Uncertainty Table 3: Angle, Time, and Acceleration
+Read
+ing
+ Angle  
+ 0.5 [°]
+Error in sin
+Average 
+time [s]
+Absolute uncertainty in time 
+Δt [s] 
+Relative uncertainty in time 
+tt [s] 
+Relative uncertainty
+ in time2 
+ 2tt [s]
+Value of 2st2[ms-2]
+Absolute uncertainty of  2st2[ms-2]
+1
+6
+0.02
+1.4096
+0.0100
+1.03%
+2.05%
+0.7046
+0.0200
+2
+8.5
+0.02
+1.1053
+0.0002
+0.01%
+0.03%
+1.1459
+0.0003
+3
+11
+0.02
+0.9592
+0.0050
+0.53%
+1.05%
+1.5218
+0.0200
+4
+13.5
+0.02
+0.8551
+0.0002
+0.02%
+0.05%
+1.9145
+0.0009
+5
+16.5
+0.02
+0.7886
+0.0003
+0.03%
+0.06%
+2.4596
+0.0030
+6
+19.5
+0.02
+0.7274
+0.0050
+0.71%
+1.42%
+2.9644
+0.0400
+7
+22
+0.02
+0.6703
+0.0003
+0.04%
+0.09%
+3.3856
+0.0030
+
+
+
+
+Sample Calculation
+i) Absolute uncertainty of average time t [s]:
+t = Max - min2 
+      = 1.125 - 1.12492
+       = 0.01445 s
+
+ii) Relative uncertainty of average time tt [s]:
+tt = 0.014451.4096100
+      =1.03%
+
+
+iii) Relative uncertainty in time22tt [s]
+2tt=2tt
+          =21.03%
+          =2.05%
+iv) Absolute uncertainty in 2st2 t2 [s]
+t2=2tt2st2
+       =2.05%0.7046 
+        =0.0144 (0.02)
+
+
+
+Process Data Graph 2: Maximum and Minimum value of inclined angle and slanted acceleration
+
+
+Final slope/gradt (gradt)
+gradt=Maxima - Minima2 
+           = 11.39 + 8.8002
+           = 10.095 ms-2
+Uncertainty of slop/gradt (gradt)
+gradt= Maxima - Minima2
+                = 11.39 -8.8002
+  	   = 1.295 ms-2
+
+
+Analysis
+The graph above demonstrates that as sin() increases from 6° to 22°, the slanted acceleration (ms-2) also increases from 0.7046 ms-2, 1.1459 ms-2, 1.5218 ms-2, 1.9145 ms-2, 2.4596 ms-2, 2.9644 ms-2, and 3.3856 ms-2, respectively. The graph displays a positive correlation between the sin value and the corresponding slanted acceleration (ms-2). In other words, this shows as the sin() of the ramp increases, the slanted acceleration of the trolley consistently increases, as indicated by the upward trend of the data points, supporting the hypothesis of a decrease in time due to greater acceleration for every increase in the incline angle. The gradient of the linear line is 10.0951.295 ms-2 suggesting the value of acceleration due to gravity is constant at the given value. This indicates a 2.91% percentage error with the precise value of g, which is 9.81 ms-2, 
+Gradient of slope
+Value of g
+Percentage error
+10.0951.295 ms-2
+9.81 ms-2
+2.91% 
+
+
+The graph’s y-axis intercept extended to the value of –0.3462 ms-2, indicating the presence of systematic error in the measurements. This systematic error is attributed to the assumption of setting the initial velocity u as 0, introducing a systematic error in the calculation of the slanted acceleration (ms-2) which returns a higher value than the actual value g or other potential issues in the measuring method. Nevertheless, the correlation of the data points is 0.9996, which reveals that there is a strong linear relationship between variables, considering that 1 represents a perfect positive correlation. 
+Upon analyzing the data on the graph, it is evident that the majority of the points align closely with the linear best fit without introducing extreme outliers or anomalies. However, the graphs showcase random errors when sin() is 0.1478 and 0.2334, with their slanted acceleration value being lower than expected from the linear fit. One of the possible reasons for such inaccuracy is that the trolley was not released consistently due to human error or the photogates were not properly aligned, affecting the time interval of the trolley. Hence, in the case of removing the two data points, a more prominent correlation between 
+sin() and slanted acceleration (ms-2) are likely to be observed. 
+The error bars in the x-axis are consistent with 0.02 since the basic unit of the protractor is 1°, converted into 0.017 in cos(1°) which is expressed as 0.02 in one significant figure. The following uncertainties are attributed to the systematic error in the measuring equipment.
+
+Conclusion
+The purpose of the experiment was to examine the effects of changing the angle in inclination(θ) of the ramp upon the time taken for the object to slide through Photogate A and B. Based on the proposed hypothesis, “as the angle of inclination of the ramp increases, the time takes for the trolley to cover its corresponding distance will decrease” the trend of the processed data indicates a positive correlation: the increase in the angle of inclination(sin(θ)) as the time interval for the ball to pass through the photogates has decreased. This relationship is shown when the incline angle (θ) increased from 6° to 22°, and the acceleration of the trolley increased from 0.7046 ms-2 to 3.3856 ms-2. The graph intercepts the y-axis at the value of –0.3462 ms-2, indicating the presence of systematic error in the measurements. Furthermore, the graph presents a clear trend: a distinct and proportional linear relationship between the IV(angle of incline) and DV(acceleration of trolley). The gradient of the line of best fit indicates the acceleration due to gravity -10.095  ms-2, with an absolute uncertainty of  1.295 ms-2 validating the accuracy of the g value. This is evinced by how the data points are distributed, closely clustered near the linear trend line in the graph, showing a constant increase. Hence, the observed trend of the line of best fit verifies the validity of the proposed hypothesis. The linear proportion between sin(θ) and acceleration verifies that in an inclined plane, the increase in angle(θ) impacts the acceleration of the trolley because a greater gravitational force will be acting upon the trolley, which leads to an increase in the acceleration of the trolley (“Inclined plane”). Albeit, the error bars in the graph demonstrate there are existing random and systematic errors with the error in the gradient suggesting that some external factors, such as human error or equipment failure, contributed to the observed deviation. 
+
+Evaluation
+Weakness
+Initial velocity = 0: The initial velocity of the trolley was assumed to be 0 in the experiment with the object released from rest; however, this introduces a critical weakness, as the object may not be released from a net force of zero. Additionally, the distance between the trolley and Photogate A may not align completely, leaving room for systematic error. The limitation in equipment setup can influence the trolley’s acceleration, which has also contributed to the slanted acceleration of the trolley being greater than the acceleration due to gravity by a 2.91% error percentage. To minimize this error, a more controlled release mechanism and time measuring system should be established, ensuring the time is measured accurately under the trolley having zero-net force. 
+Air Resistance & Friction: In the experiment, air resistance is negligible due to the complexity of calculating viscosity. Still, air resistance should be acknowledged since the force impacts the acceleration of the trolley in the opposite direction. Furthermore, the external forces such as the frictional force are negligible to avoid further complication, however, friction force generally works in the opposite direction of the acceleration. 
+
+Improvement
+Expanded range of independent variable: Throughout the investigation, the angles from 6° to 22° were recorded to find the time taken for the trolley to travel the inclined distance. Nonetheless, having a larger range of variables, with angles bigger than 22°, should also be considered to have a more accurate and holistic view of the effect of change in the independent variable (inclined angle) upon the dependent variable (time interval). 
+Reduce random errors: An additional amount of trials should be conducted to minimize the random errors during the experiment and improve the reliability of the results. The repetition of data points will average out potential outliers or anomalies, leading to an approach of precise and accurate data collection. This further reduces the interference of extraneous variables such as human errors or subtle variations in timing or distance measurement, providing credibility to the quantitative analysis.
+Use of kinematic formulas: Employing the other kinematic formula will be beneficial in investigating the relationship between inclined angle and time taken to travel the covered distance as the value of v, u, and s, and be derived through the experiment. The application of the following formula will be particularly useful in calculating the horizontal acceleration of the object, which will be obtained through the use of photogates placed on the ground surface.
+
+Further Scope
+The following experiment can be further improved by adding the number of trials or changing the range of independent and dependent variables. Investigating the impacts of change in the inclined plane on the horizontal acceleration of the object to determine the resolved vector component of gravity. Additionally, the sliding object may vary from trolleys to metal balls, exploring the variance in acceleration regarding the material. With a broader knowledge of physics, investigating the coefficient of friction force or calculating the air resistance of the object would further expand the curiosity of physics to life. 
+
+Citation
+“Inclined Planes.” Physicsclassroom.com, www.physicsclassroom.com/class/vectors/Lesson-3/Inclined-Planes#:~:text=As%20the%20angle%20increases%2C%20the,at%20greater%20angles%20of%20incline. Accessed 10 Oct. 2024.
+BYJUS. “Inclined Plane - Motion of Objects on an Incline, Solved Problems.” BYJUS, BYJU’S, 14 Apr. 2020, byjus.com/physics/acceleration-inclined-plane/#:~:text=Gravity%20Force%20Components,-To%20determine%20the&text=In%20the%20case%20of%20inclined,perpendicular%20to%20the%20inclined%20surface. Accessed 10 Oct. 2024.
+Fig 1: 
+Topper Learning. “I Just Want to Ask..How to Resolve the Components of Vector..Means Where to Take Sin and Cos Theta...It’s Troubling Me so Much Please Provide the Solution with Some Examples..If There’s Any Rule Please Mention It - Kzm7l4vv.” TopperLearning, 2016, www.topperlearning.com/answer/sir-i-just-want-to-askhow-to-resolve-the-components-of-vectormeans-where-to-take-sin-and-cos-thetaits-troubling-me-so-much-please-provide-the-solution/kzm7l4vv. Accessed 10 Oct. 2024.
+Fig 2:
+Gilmour, Lindsay. “Core Practical 1: Investigating the Acceleration of Freefall | Edexcel a Level Physics Revision Notes 2017.” Save My Exams, 2017, www.savemyexams.com/a-level/physics/edexcel/17/revision-notes/2-mechanics/forces--momentum/2-11-core-practical-1-investigating-the-acceleration-of-freefall/. Accessed 10 Oct. 2024.
+Fig 3: 
+GeeksforGeeks. “Sine Function in Trigonometry.” GeeksforGeeks, 16 Nov. 2023, www.geeksforgeeks.org/sine-function/. Accessed 11 Oct. 2024.

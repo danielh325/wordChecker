@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav>
+    <div class="logo">Lab Report Word Checker</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="container">
+        <h1>Lab Report Word Counter</h1>
+        <p class="word-count">Total Words: <span id="wordCount">0</span></p>
+        <textarea id="userInput" placeholder="Type or paste text here..."></textarea>
+        <button id="processBtn">Count Words</button>
+        <div id="outputContainer" style="display: none;">
+            <div id="output"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
