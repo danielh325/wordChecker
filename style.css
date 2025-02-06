@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+#output {
+  margin-top: 20px;
+  white-space: pre-wrap; /* preserve formatting and line breaks */
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}

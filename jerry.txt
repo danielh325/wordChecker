@@ -1,0 +1,504 @@
+Aim
+To investigate the rate at which water cools at room temperature and thus verify Newton’s Law of Cooling
+
+RQ
+How does the temperature of hot water change over time when it cools at room temperature?
+
+
+Theory
+Published by Isaac Newton in 1701 as “Scala graduum Caloris(Scale of the degree of heat)”, Newton’s Law of Cooling states that the rate of heat loss of an object is directly proportional to the temperature difference between the object and the surrounding temperature. In simple terms, the object will cool down fast when its temperature is much higher than its surroundings and will slow down when the temperature is just slightly higher, leading to an exponential cooling graph when the temperature is plotted against time. However, this law is only accurate when the temperature difference is relatively low, and that only one heat transfer mechanism is present, particularly for convection. Nowadays, Newton’s Law of Cooling is utilized in multiple fields, such as food processing, where it’s used to optimize cooling processes and determine appropriate storage temperatures to maintain food quality. 
+
+
+Mathematically, the differential form of the law is represented as the following:
+(1)dTdt=-k(T-Ts)
+Where:
+dT/dt = rate of cooling(°C/s)
+k = cooling constant (1/min)
+T = temperature of the object(°C)
+Ts = surrounding temperature(°C)
+
+The solution to the differential equation (1):
+(2)T=Ts+(T0-Ts)e-kt
+Where:
+T0 = initial temperature of the object(°C)
+e = Euler’s number, approximately 2.71828
+
+Rearranging equation (2) gives:
+(3)T-Ts=(T0-Ts)e-kt
+Taking the natural logarithm for both sides:
+(4)ln(T-Ts)=ln[(T0-Ts)e-kt]
+Rearranging equation (4):
+(5)lnTlnTs=ln(T0-Ts)-kt
+(6)lnTlnTs+kt=ln[(T0-Ts)]
+(7)kt=ln[(T0-Ts)]-lnTlnTs
+(8)k=ln[(T0-Ts)]-ln(T-Ts)t
+(9)k=ln(T0-TsT-Ts)t
+Hypothesis
+As stated in Newton’s Law of Cooling, the temperature of water will undergo exponential decrement over time, which means its cooling rate will gradually decrease. In the beginning, the water cools quickly due to the large difference with the surrounding temperature, but as time progresses, the temperature difference is small and the water will start to cool slowly. This will form an exponential graph similar to the one below: 
+
+Moreover, according to equation 9, when ln(T0-TsT-Ts) is plotted over time, the graph should be linear, with the gradient being the cooling constant k. In the experiment, T0, Ts and T will be measured to calculate and graph k, verifying Newton’s Law of Cooling.
+
+
+Parameters
+Independent variable: Time after cooling(s)
+Data will be collected every 5 minutes, for 1 hour in total, with 13 data points.
+Ignorable error in time measurement since it was done automatically by the Vernier probe thermometer
+As time increases the temperature of water will gradually decrease exponentially. 
+
+
+Dependent variable: Temperature of water(°C)
+Measured by the vernier probe thermometer and automatically recorded into Vernier Graphical Analysis software
+No error in temperature data since an extremely accurate sensor collects it
+The temperature data points will be plotted against time to verify Newton’s Law of Coolin.g
+
+
+Control variable: 
+Surrounding temperature(°C)
+For the water contained in 3 beakers as in the 3 trials of the experiment, the same ambient temperature should be provided to ensure identical cooling conditions, since according to Newton’s Law of Cooling, the temperature difference between the object and its surroundings is a key determinant to the cooling rate. This is done by placing all the beakers at room temperature, which remains constant throughout the experiment.
+Cooling material 
+Different materials have different cooling constants and will lose heat at different rates, therefore the same material should be used for the 3 trials to generate the same cooling curves. Water is used for this experiment because it’s not only a common and harmless liquid but also easy to measure temperature, as the thermometer can stick inside the water.  
+Cooling container
+The water doesn’t directly cool down when in contact with air, but mainly through its container as a medium. Heat will be first transferred from the water to its container, and then to the surrounding air. Therefore the heat conductivity of the container should be kept the same by using the same type of material, otherwise, the cooling rate of water will be affected. In this experiment, glass beakers are used since they’re transparent and have scales that are convenient to read the volume of water. 
+Initial temperature of water(°C)
+Newton's Law of Cooling states that the cooling rate is directly proportional to the temperature difference between the object and its surroundings. If the initial temperature varies, it will affect the cooling rate, resulting in the 3 trials generating varied cooling curves. This is kept the same by heating water with the same hot water kettle and pouring them into the beakers at the same time. 
+Volume of water
+A large volume of water will have a higher thermal mass, meaning it’s difficult for it to cool down, and vice versa. Therefore to make sure the cooling rates between the trials are the same, the same volume of water should be used. It’s kept the same by pouring 75mL of water into every beaker. 
+
+
+
+Methodology 
+
+
+Equipment:
+Empty 150mL glass beaker *3: container for the water to cool down under room temperature
+Water: 75mL*3, the object of cooling. Water is chosen because as a liquid it’s easy to measure its temperature by sticking the sensor in the water.
+Boiling kettle *1: used to boil the water that will be used for cooling
+Vernier probe thermometer *3: used to measure the temperature of water. It’s able to automatically record the temperature data in a regular time interval when connected to a computer 
+Calorimeter lid *3: used to cover the beakers, thus reducing heat loss through evaporation and convection of the air above. It also holds the thermometer so that it won’t touch the bottom or sides of the beaker
+Vernier Graphical Analysis: the software that can connect to the vernier probe thermometers through Bluetooth and record the temperatures automatically for regular time intervals 
+
+Procedure:
+Prepare all the experiment apparatus and place them on an empty table
+Measure room temperature with the vernier thermometer and record 
+Boil water in the hot water kettle 
+Pour 75ml of hot water into each of the 3 empty beakers simultaneously
+Cover the beakers with the calorimeter lid at the same time
+Place the vernier probe thermometer inside the water without touching the bottom or sides of the beaker
+Connect to the Vernier Graphical Analysis software with Bluetooth and start collecting data
+Experiment for one hour for the water to cool down with the sensor measuring the temperature every 5 seconds 
+
+
+Safety considerations:
+Before experimenting, several safety precautions should be in place to prevent accidents and injuries:  
+Use personal protection equipment, including goggles and gloves to protect the experimenter from hot water
+Work with a teacher supervisor or partner to ensure there’s someone to help in case of emergency
+Pour hot water slowly into the beakers to prevent the water from splashing out
+Other people should be informed to not get close to the experiment area in case of accidentally knocking on the hot water and causing injuries.
+The experiment should be performed in a secure area without obstacles and disturbance.e  
+
+
+
+Data Analysis
+Standard measurements:
+Ambient temperature = 23.2°C
+Volume of water = 75mL
+
+Raw data graph: relationship between time and temperature of hot water
+
+
+Raw data table: relationship between time and temperature of hot water
+Reading
+Time(min)
+T1
+T2
+T3
+1
+0
+58.5134
+55.5854
+56.3362
+2
+5
+50.5875
+50.1371
+47.8419
+3
+10
+45.9650
+45.2786
+43.0370
+4
+15
+42.5222
+41.7822
+39.6586
+5
+20
+39.7981
+39.0580
+37.0846
+6
+25
+37.5887
+36.8594
+35.0147
+7
+30
+35.8298
+35.0576
+33.4274
+8
+35
+34.3283
+33.5561
+32.0653
+9
+40
+33.0413
+32.3120
+30.9284
+10
+45
+31.9366
+31.2716
+29.9739
+11
+50
+31.0035
+30.3600
+29.2231
+12
+55
+30.2313
+29.5663
+28.5367
+13
+60
+29.4805
+28.8585
+27.9147
+
+
+The raw data consists of 39 readings in total, of 13 different times with data from 3 trials. Through the raw data table, it’s observed that over time, the temperature of hot water decreases and fits with the exponential graph with a very high correlation of 0.999, verifying our hypothesis. The initial temperature was about 57°C, and after 60 minutes, the hot water cooled down to an average temperature of 29°C, which is 6°C above room temperature. With more experiment time, the temperature of the water will approach room temperature further. For each temperature reading, there’s a systematic error of 1°C because they started cooling at slightly different times, which is a weakness of this experiment that causes data inaccuracy and can be solved by pouring out hot water simultaneously. Still, compared with the theoretical graph of an object’s cooling curve, this raw data graph is extremely similar and thus corroborates Newton’s Law of Cooling. 
+
+
+Processed data table: the  relationship between time and the logarithmic difference
+Reading
+Time(min)
+Average
+Ts
+T0-Ts
+T-Ts
+(T0-Ts)/(T-Ts)
+ln(T0- TsT - Ts)
+1
+0
+56.8116
+22.7
+34.1
+34.1116
+0.9997
+-0.0003
+2
+5
+49.5222
+22.7
+34.1
+26.8222
+1.2713
+0.2401
+3
+10
+44.7602
+22.7
+34.1
+22.0602
+1.5458
+0.4355
+4
+15
+41.3210
+22.7
+34.1
+18.6210
+1.8313
+0.6050
+5
+20
+38.6469
+22.7
+34.1
+15.9469
+2.1383
+0.7600
+6
+25
+36.4876
+22.7
+34.1
+13.7876
+2.4732
+0.9055
+7
+30
+34.7716
+22.7
+34.1
+12.0716
+2.8248
+1.0384
+8
+35
+33.3165
+22.7
+34.1
+10.6165
+3.2120
+1.1669
+9
+40
+32.0939
+22.7
+34.1
+9.3939
+3.6300
+1.2892
+10
+45
+31.0607
+22.7
+34.1
+8.3607
+4.0786
+1.4058
+11
+50
+30.1955
+22.7
+34.1
+7.4955
+4.5494
+1.5150
+12
+55
+29.4448
+22.7
+34.1
+6.7448
+5.0558
+1.6205
+13
+60
+28.7512
+22.7
+34.1
+6.0512
+5.6352
+1.7290
+
+
+Sample calculations(Reading 7, at 30min mark): 
+Average temperature:
+Tavg=T1+T2+T33=35.8298+35.0576+33.42743=34.7716
+Difference between initial and surrounding temperature:
+T0 - Ts = 56.8116 - 22.7 = 34.1
+Difference between the average temperature at the instant and surrounding temperature:
+T - Ts = 34.7716 - 22.7 = 12.072
+Logarithmic difference: 
+ln(T0-TsT-Ts) = ln(34.112.072) = 1.0384
+
+Processed data graph1: the relationship between time and the logarithmic difference
+
+
+
+Processed data graph2: max and min gradients
+
+
+k = 0.02782
+MAX gradient = 0.03047
+MIN gradient = 0.02364
+Uncertainty in k = MAX-MIN2=0.03047-0.023642=0.0034150.003
+
+
+
+Uncertainty data table: Temperature of water, ambient temperature, initial temperature
+Reading
+Time
+(min)
+Error of T
+Error of Ts
+Error of T-Ts
+Error of T0 - Ts
+%Error of (T0-Ts/T-Ts)
+Error of (T0-Ts/T-Ts)
+Error of ln(T0-Ts/T-Ts)
+1
+0
+1.4640
+0.05
+1.51
+0.05
+0.0458
+0.0458
+0.0
+2
+5
+1.3728
+0.05
+1.42
+0.05
+0.0545
+0.0693
+0.1
+3
+10
+1.4640
+0.05
+1.51
+0.05
+0.0701
+0.1084
+0.1
+4
+15
+1.4318
+0.05
+1.48
+0.05
+0.0810
+0.1484
+0.1
+5
+20
+1.3567
+0.05
+1.41
+0.05
+0.0897
+0.1918
+0.1
+6
+25
+1.2870
+0.05
+1.34
+0.05
+0.0984
+0.2435
+0.1
+7
+30
+1.2012
+0.05
+1.25
+0.05
+0.1051
+0.2969
+0.1
+8
+35
+1.1315
+0.05
+1.18
+0.05
+0.1128
+0.3622
+0.1
+9
+40
+1.0564
+0.05
+1.11
+0.05
+0.1192
+0.4329
+0.1
+10
+45
+0.9813
+0.05
+1.03
+0.05
+0.1248
+0.5091
+0.1
+11
+50
+0.8902
+0.05
+0.94
+0.05
+0.1269
+0.5773
+0.1
+12
+55
+0.8473
+0.05
+0.90
+0.05
+0.1345
+0.6800
+0.1
+13
+60
+0.7829
+0.05
+0.83
+0.05
+0.1391
+0.7839
+0.1
+
+
+
+Sample error calculations(Reading 7, at 30 min mark):
+Standard errors:
+Ts=0.05(Measured with an ordinary thermometer)
+T0=0(Error measured by the vernier probe thermometer is ignorable) 
+(T0-Ts)=0.05
+The error of T: 
+Max(T)-Min(T)2=35.8298-33.42742=1.2012
+The error of T-Ts:
+(T-Ts)=T-Ts=1.2012+0.051.25
+The error of (T0 - Ts)/(T - Ts):
+According to the processed data table at reading 7, T0 - TsT - Ts = 2.8248 
+(T0 - TsT - Ts)=[(T0 - Ts)T0 - Ts+(T - Ts)T - Ts]T0 - TsT - Ts=(0.0534.1+1.2512.072)2.8248=0.2969
+The error of ln[(T0 - Ts)/(T - Ts)]:
+[ln(T0 - TsT - Ts)]=(T0 - TsT - Ts)T0 - TsT - Ts=0.29692.82480.1
+
+Analysis:
+Processed data graph 1 shows the positively correlated relationship between the logarithmic time difference ln(T0- TsT - Ts)  and time(in minutes). The gradient of the graph is ln(T0- TsT - Ts)t , which is the cooling constant k according to theory. Starting from t = 0min to t = 60min, the logarithmic time difference increases from 0 to 1.729, forming a linear graph passing nearly all error bars with the final k being (0.027820.003)min-1. The graph has a high correlation of 0.993, verifying the prediction by Newton's Law of Cooling that there’s a constant k for the cooling of an object. However, there’s still a y-intercept of 0.143, implying a systematic error potentially caused by the inconsistent time for the water to begin cooling. At the same time, the root mean square error is 0.06753, which is very close to 0(perfect precision), implying a good fit of the data points with the theoretical graph. 
+
+Processed data graph 2 shows the maximum and minimum gradients or k, which are 0.03047 and 0.02364 respectively. Finding their difference and dividing by 2 gives us the uncertainty in k, which is 0.003. Most of the data points fit with the graph, with a few outliers such as readings 5 and 6, where they have a temperature slightly higher than the best-fit graph. This can be explained by fluctuations in ambient temperature or the fact that hot water cools down through multiple ways(conduction, convection, etc), creating temperature inaccuracies with the best-fit graph. Better insulation methods and stabilized ambient temperature can eliminate the outliers and generate a more statistically reliable and accurate data set. 
+Conclusion 
+This experiment aims to investigate the rate at which water cools at room temperature and thus verify Newton’s Law of Cooling. By collecting the temperature data of hot water at regular time intervals as it cools at room temperature, this experiment shows an exponential decrement of temperature over time and thus corresponds with the prediction of Newton’s Law of Cooling. For the processed data graph, the logarithmic time difference ln(T0- TsT - Ts) is observed to increase linearly over time, verifying the hypothesis that plotting ln(T0- TsT - Ts) with time will generate a straight linear line with the gradient being the cooling constant k. The linear graph shows the k for water to be (0.027820.003)min-1 with a high correlation of 0.993, proving Newton’s Law of Cooling once again. There’s no reference to a “true” value of the cooling constant for water, as it depends on multiple factors such as the ambient temperature and the airflow around it. The error bars from the raw and processed data represent random errors potentially caused by fluctuations in the surrounding temperature or the existence of more than one cooling method. On the other hand, the small y-intercept in the processed data graph implies the existence of a systematic error caused by inconsistencies between trials in experimental procedures during the beginning of cooling. Multiple improvements can be made to manifest Newton’s Law of Cooling more precisely in the lab, such as providing better insulation of water and collecting a more robust data set.   
+
+Weakness:
+Inconsistent initial temperatures between the trials
+Theoretically, to make sure that the water for all trials cools down at the same rate, the initial temperature should be kept the same. This was done by heating water in one kettle and pouring it into the empty beakers at the same time. However, during the experiment, the hot water kettle can only be poured into one beaker at a time, resulting in a 3-4 second difference for them to expose at room temperature and cool down. Thus, the water being poured out first will start cooling down before the others have started. When the temperature sensors start collecting data, the beakers' water will have different initial temperatures. Furthermore, since water cools down relatively quickly when the temperature difference is large, this will result in an error of about 1°C.
+Undifferentiated ways of cooling
+The experiment setup has poor insulation of the water, with only a lid covering on top reducing evaporation. Therefore, the 4 ways for hot water to cool in this experiment setup are all present: conduction through the glass beaker, convection through the air above, radiation due to its high temperature, and evaporation which decreases the mass of water and brings the thermal energy away. Furthermore, the speed of cooling through convection changes over time since it heavily relies on temperature differences. Usually, Newton’s Law of Cooling deals with only one cooling mechanism being present. However, due to this mix of cooling mechanisms, the cooling speed of water is constantly fluctuating and can’t be modelled accurately with only Newton’s Law of Cooling. 
+
+
+Improvement: 
+Controlled cooling process
+To prevent the water from cooling down with multiple methods including conduction, convection, radiation and evaporation, a calorimeter can be used to provide a more insulated environment, ensuring that heat loss through conduction and evaporation is minimized. This way, the cooling process is more controlled and can be modelled more accurately with Newton’s Law of Cooling.
+Control ambient temperature
+In this experiment, water is left to cool at room temperature in the physics classroom. However, due to ventilation and interference of other thermal physics experiments in close proximity, the ambient temperature can fluctuate, resulting in inaccuracies in the data set. To resolve this problem, the experiment apparatus can be placed in a well-insulated box that separates the equipment from the outside environment and keeps a constant ambient temperature.
+More robust data set
+Water has a high specific heat capacity, meaning that it both heats up and cools down slowly. The experiment only collects data for one hour of cooling, while it might take a longer time for it to fully cool down to room temperature, which is about 23°C, since the smaller the temperature difference the slower it is to lose heat. With another chance, this experiment can last for 2 hours or more, forming a more robust data set and providing implications of how water cools over time when its temperature is close to the ambient temperature. This will also provide a more complete picture of the cooling curve of water. In addition, the sensor can collect data on smaller time intervals, for example, every 2 seconds rather than every 5, to reduce random error further and enhance the statistical reliability of the results.
+
+
+Further scope:
+
+This experiment utilizes water as the cooling material since it’s common and convenient for temperature measurement. However, performing the same experiment on other materials, not only other liquids such as oil or salt water but also solids like wood and metal will provide insights into how they undergo heat transfer differently from each other, verifying Newton’s Law of Cooling on a wider scope. It would be interesting to investigate the cooling constants of different materials and attempt to find out the physics rationale behind their thermal properties. In addition, to investigate the effectiveness of Newton’s Law of Cooling in other scenarios, different initial temperatures, the mass of the object and ambient temperature can be used to perform this cooling experiment. This can provide broader implications of how Newton’s Law of Cooling still applies to different scenarios and environments. 
+
+Citation
+Byju. “Newton’s Law of Cooling - Derivation, Formulas, Solved Examples.” BYJUS, 2022, byjus.com/jee/newtons-law-of-cooling/.
+‌
+geeksforgeeks. “Newton’s Law of Cooling.” GeeksforGeeks, 15 June 2021, www.geeksforgeeks.org/newtons-law-of-cooling/.
+‌
+“Newton’s Law of Cooling (Theory) : Heat & Thermodynamics Virtual Lab : Biotechnology and Biomedical Engineering : Amrita Vishwa Vidyapeetham Virtual Lab.” Vlab.amrita.edu, vlab.amrita.edu/?sub=3&brch=194&sim=354&cnt=1.
+‌
+StudySmarter. “Newton’s Law of Cooling: Formula & Examples | StudySmarter.” StudySmarter UK, www.studysmarter.co.uk/explanations/physics/further-mechanics-and-thermal-physics/newtons-law-of-cooling/.
