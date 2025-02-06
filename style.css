@@ -24,6 +24,16 @@ nav {
     font-size: 22px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.logo a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
 }
 
 .nav-links {
