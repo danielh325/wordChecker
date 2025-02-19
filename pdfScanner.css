@@ -1,0 +1,135 @@
+
+:root {
+    --primary: #2563eb;
+    --secondary: #3b82f6;
+    --surface: #ffffff;
+    --background: #f8fafc;
+    --text: #1e293b;
+    --border: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui;
+}
+
+body {
+    background: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: linear-gradient(135deg, var(--primary), var(--secondary));
+padding: 1.2rem 2rem;
+box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+font-size: 24px;
+color: white;
+transition: 0.3s;
+font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.nav-links li {
+display: inline;
+}
+
+.nav-links a {
+text-decoration: none;
+color: white;
+font-size: 18px;
+transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+color: #1abc9c;
+}
+
+.container {
+    flex: 1;
+    max-width: 800px;
+    margin-top: 11%;
+    margin-inline: auto;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.upload-card {
+    background: var(--surface);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    border: 1px solid var(--border);
+}
+
+#textPreview {
+    text-align: left;
+    background: var(--surface);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    max-height: 60vh;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    color: var(--text);
+    tab-size: 4;
+}
+
+.progress-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

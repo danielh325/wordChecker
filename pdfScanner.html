@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Formatted Analyzer</title>
+    <link rel="stylesheet" href="/pdfScanner.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="/index.html"><h1>Lab Report Word Checker</h1></a>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html">About</a></li>
+            <li><a href="/pdfScanner.html">Pdf Scanner</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="upload-card">
+            <input type="file" id="fileInput" accept=".pdf" hidden>
+            <label for="fileInput" style="cursor: pointer;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📄</div>
+                <h2>Upload PDF Document</h2>
+                <p style="color: #64748b; margin: 1rem 0 2rem 0;">
+                    Drag & drop or click to browse files
+                </p>
+            </label>
+            <div id="results" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3>Analysis Results</h3>
+                    <div style="background: var(--background); padding: 0.5rem 1rem; border-radius: 0.5rem;">
+                        Word Count: <span id="wordCount" style="color: var(--primary); font-weight: 600;">0</span>
+                    </div>
+                </div>
+                <div id="textPreview"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-overlay" id="progressOverlay">
+        <div class="spinner"></div>
+        <p style="color: var(--text); font-weight: 500;">Processing document...</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="pdfScanner.js"></script>"
+</body>
+</html>

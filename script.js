@@ -1,20 +1,81 @@
-// Attach event listener to button
 document.getElementById('processBtn').addEventListener('click', function () {
+    const fileInput = document.getElementById('fileInput');
     const textInput = document.getElementById('userInput').value;
     const outputDiv = document.getElementById('output');
-    const outputContainer = document.getElementById('outputContainer');
+    outputDiv.style.display = "none"; // Hide output box initially
 
-    outputDiv.textContent = ''; // Clear previous output
-    outputContainer.style.display = 'none'; // Hide output before processing
-
-    if (!textInput.trim()) {
-        outputDiv.textContent = 'Please enter some text.';
+    if (!textInput.trim() && (!fileInput.files || fileInput.files.length === 0)) {
+        outputDiv.textContent = 'Please enter text or upload a file.';
         updateWordCount(0);
-        outputContainer.style.display = 'block'; // Show output box even for error message
         return;
     }
 
-    const result = countAllWordsFromText(textInput);
+    if (textInput.trim()) {
+        // Process manually entered text
+        processText(textInput);
+    } else {
+        // Process uploaded file (PDF or TXT)
+        const file = fileInput.files[0];
+        if (file.type === "application/pdf") {
+            processPDF(file);
+        } else if (file.type === "text/plain") {
+            processTextFile(file);
+        } else {
+            outputDiv.textContent = 'Unsupported file type. Please upload a TXT or PDF file.';
+        }
+    }
+});
+
+// Function to process user-inputted text
+function processText(text) {
+    const result = countAllWordsFromText(text);
+    displayResults(result);
+}
+
+// Function to process a text file
+function processTextFile(file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        processText(e.target.result);
+    };
+    reader.readAsText(file);
+}
+
+// Function to process a PDF file
+// Function to process a PDF file
+function processPDF(file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const typedArray = new Uint8Array(e.target.result);
+        pdfjsLib.getDocument(typedArray).promise.then(pdf => {
+            let text = "";
+            let promises = [];
+
+            // Iterate over all the pages
+            for (let i = 1; i <= pdf.numPages; i++) {
+                promises.push(pdf.getPage(i).then(page => {
+                    return page.getTextContent().then(content => {
+                        // Concatenate text from each page
+                        text += content.items.map(item => item.str).join(" ") + "\n";
+                    }).catch(err => console.error(`Error extracting text from page ${i}:`, err));
+                }));
+            }
+
+            // Ensure all pages are processed before displaying results
+            Promise.all(promises).then(() => {
+                // Now that all pages are processed, pass the text to processText function
+                processText(text);
+            }).catch(err => console.error("Error processing PDF:", err));
+        }).catch(err => console.error("Error loading PDF:", err));
+    };
+    reader.readAsArrayBuffer(file);
+}
+
+
+// Function to display results
+function displayResults(result) {
+    const outputDiv = document.getElementById('output');
+    outputDiv.style.display = "block"; // Show output box
 
     let displayText = 'Processed Text:\n\n' + result.totalText + '\n\n';
     if (result.citationFound) {
@@ -23,38 +84,11 @@ document.getElementById('processBtn').addEventListener('click', function () {
         displayText += "Total word count: " + result.totalWordCount;
     }
 
-    outputDiv.innerHTML = displayText.replace(/\n/g, '<br>'); // Preserve line breaks
-    
+    outputDiv.textContent = displayText;
     updateWordCount(result.totalWordCount);
-    
-    outputContainer.style.display = 'block'; // Show output box after processing
-});
-
-// Update live word count as user types
-document.getElementById('userInput').addEventListener('input', function () {
-    const text = this.value;
-    const result = countAllWordsFromText(text);
-    updateWordCount(result.totalWordCount);
-});
-
-// Function to clean and count words from text
-function countWordsInText(text) {
-    // Remove unwanted characters (numbers, special symbols, etc.)
-    const cleanedText = text.replace(/[^A-Za-z\s-]/g, ''); // Keeps letters, spaces, and hyphens
-
-    // Tokenize the cleaned text
-    const words = cleanedText.split(/\s+/);
-
-    // Remove words that are purely numeric (to avoid counting numbers)
-    const filteredWords = words.filter(word => isNaN(word));
-
-    // Count only words (including hyphenated words)
-    const wordCount = filteredWords.filter(word => /^[A-Za-z-]+$/.test(word)).length;
-
-    return { wordCount, cleanedText };
 }
 
-// Function to process the text input
+// Function to count words from text
 function countAllWordsFromText(text) {
     let totalWordCount = 0;
     let totalText = '';
@@ -62,21 +96,25 @@ function countAllWordsFromText(text) {
 
     const lines = text.split('\n');
     for (let line of lines) {
-        // Check if 'citation' is in the current line (case-insensitive)
         if (line.toLowerCase().includes('citation')) {
             citationFound = true;
-            // Append only the text before the word 'citation'
             totalText += line.split(/citation/i)[0];
             break;
         }
         totalText += line + '\n';
     }
 
-    // Clean and count words from the text up to (but not including) 'citation'
     const { wordCount, cleanedText } = countWordsInText(totalText);
     totalWordCount = wordCount;
 
     return { totalWordCount, totalText: cleanedText.trim(), citationFound };
+}
+
+// Function to clean and count words
+function countWordsInText(text) {
+    const cleanedText = text.replace(/[^A-Za-z\s-]/g, '');
+    const words = cleanedText.split(/\s+/).filter(word => isNaN(word) && /^[A-Za-z-]+$/.test(word));
+    return { wordCount: words.length, cleanedText };
 }
 
 // Function to update word count display

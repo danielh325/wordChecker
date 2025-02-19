@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Counter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lab Report Word Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 </head>
-<nav>
-    <div class="logo">Lab Report Word Checker</div>
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Help</a></li>
-    </ul>
-</nav>
-
 <body>
+    <nav>
+        <a href="/index.html"><h1>Lab Report Word Checker</h1></a>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html">About</a></li>
+            <li><a href="/pdfScanner.html">Pdf Scanner</a></li>
+        </ul>
+    </nav>
+    
     <div class="container">
-        <h1>Lab Report Word Counter</h1>
-        <p class="word-count">Total Words: <span id="wordCount">0</span></p>
-        <textarea id="userInput" placeholder="Type or paste text here..."></textarea>
-        <button id="processBtn">Count Words</button>
-        <div id="outputContainer" style="display: none;">
-            <div id="output"></div>
-        </div>
-
+        <h2>Total Word Count: <span id="wordCount">0</span></h2>
+        <textarea id="userInput" placeholder="Enter your text here..."></textarea>
+        <button id="processBtn">Process Text</button>
+        
+        <div id="output" class="output-box"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
